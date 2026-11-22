@@ -1,0 +1,22 @@
+{
+  "name": "tsk-growth-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n client,server \"npm:dev --workspace client\" \"npm:dev --workspace server\"",
+    "build": "npm run build --workspace client",
+    "lint": "npm run lint --workspace client && npm run lint --workspace server",
+    "test": "npm test --workspace server",
+    "start": "npm run start --workspace server",
+    "seed:services": "npm run seed:services --workspace server",
+    "create:admin": "npm run create:admin --workspace server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

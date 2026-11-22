@@ -1,0 +1,65 @@
+/* Establishes global typography, theme tokens, resets, and accessible defaults. */
+:root {
+  font-family: 'Inter', Arial, sans-serif;
+  color: #1b1b52;
+  background: #1b1b52;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --navy: #1b1b52;
+  --navy-deep: #14143f;
+  --navy-soft: #252568;
+  --indigo: #5b5bcc;
+  --lime: #c9fa64;
+  --ice: #f4f4fc;
+  --ink: #1b1b52;
+  --muted: #a4a4c4;
+  --line-dark: rgba(244, 244, 252, 0.14);
+  --line-light: rgba(27, 27, 82, 0.14);
+  --mono: 'Cascadia Mono', Consolas, monospace;
+  --display: 'Inter', Arial, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('/fonts/playfair-display-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('/fonts/playfair-display-italic-latin.woff2') format('woff2');
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body { margin: 0; min-width: min(320px, 100%); min-height: 100vh; }
+body, button, input, select, textarea { font-family: 'Inter', Arial, sans-serif; }
+button, input, select, textarea { font-size: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { color: inherit; }
+a { color: inherit; text-decoration: none; }
+img, svg { display: block; }
+::selection { color: var(--navy); background: var(--lime); }
+:focus-visible { outline: 3px solid var(--indigo); outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}

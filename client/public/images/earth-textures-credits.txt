@@ -1,0 +1,12 @@
+Earth texture attribution
+
+The Earth day, night-lights, cloud, normal, and specular maps in this folder are
+from Solar System Scope's texture pack:
+https://www.solarsystemscope.com/textures/
+
+Solar System Scope distributes these textures under the Creative Commons
+Attribution 4.0 International license:
+https://creativecommons.org/licenses/by/4.0/
+
+The texture pack documentation states that its Earth maps incorporate NASA
+elevation and imagery data, including NASA's Blue Marble.
